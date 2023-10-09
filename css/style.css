@@ -43,3 +43,35 @@ body main section h1{
   text-align: center;
   border: 3px solid #000;
 }
+
+.logo-bilde-gruppe-1 {
+  display: flex;
+}
+
+.logo-bilde-gruppe-1 figure {
+  margin-right: 10px; 
+}
+
+.logo-bilde-gruppe-1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-bilde-gruppe-2 {
+  display: flex;
+}
+
+.logo-bilde-gruppe-2 figure {
+  margin-right: 10px; 
+}
+
+.logo-bilde-gruppe-2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+body main section article h2{
+  font-family: sans-serif;
+  text-align: center;
+  border: 3px solid #000;
+}
