@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&family=Quicksand:wght@400;600&display=swap');
-
-
 .responsive{
   width: 97%;
   height: auto;
@@ -31,6 +28,12 @@ body header nav ul li a{
 body header span a{
   text-decoration: none;
   color: #000;
+  font-size: 16px;
+}
+
+body header span input{
+  float: right;
+  margin: 10px;
 }
 
 body main section article img{
@@ -70,8 +73,67 @@ body main section h1{
   height: auto;
 }
 
-body main section article h2{
+body main section h2{
   font-family: sans-serif;
   text-align: center;
   border: 3px solid #000;
+}
+
+.sko-gruppe-forside {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sko-gruppe-forside figure {
+  flex: 0 0 calc(50% - 10px);
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+.sko-gruppe-forside img {
+  width: 100%;
+  height: auto;
+}
+
+.sko-gruppe-forside figure figcaption a{
+  color: #D9D9D9;
+}
+
+.footer-area{
+  width: auto;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  min-width: 390px;
+  overflow: auto;
+}
+
+.footer-area section{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-area h3{
+  font-size: 1rem;
+}
+
+.footer-area a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+.footer-area article{
+  display: flex;
+  justify-content: right;
+}
+
+.footer-area article{
+  flex-wrap: wrap;
+}
+
+.footer-area img{
+width: 5rem;
+height: auto;
 }
