@@ -1,6 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,300;1,300&display=swap');
+
+
 .responsive{
   width: 97%;
   height: auto;
+}
+
+.grey-text{
+  color: #8d99ae;
 }
 
 body{
@@ -11,7 +19,7 @@ body{
 .nav-bar{
   display: flex;
   justify-content: center;
-  background-color: #fff;
+  background-color: #918888a2;
   margin: 0;
   border: 1px solid #000;
   width: 100%;
@@ -34,7 +42,7 @@ body{
   border: 1px solid #000;
 }
 
-/* Change the color of links whene hovering over */
+/* Endret farge når man hovrer over linken */
 .nav-bar li a:hover {
   background-color: #8d99ae;
   color: black;
@@ -56,7 +64,7 @@ body{
 .search-bar-and-a a{
   text-decoration: none;
   color: #000;
-  font-size: 20px; 
+  font-size: 3vw; 
   justify-content: left;
 
 }
@@ -68,16 +76,79 @@ body{
   justify-content: center;
 }
 
-body main section article img{
+#logo-topp{
+  text-decoration: none;
+  color: #000;
+  font-size: 3vw;
+}
+
+body header section ul{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+body header section ul li{
+  display: inline-block;
+}
+
+body header section ul li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 2.5vw;
+}
+
+.on-site{
+  color: #8e9aaf;
+}
+
+body main section article figure{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+body main section article figure img{
   padding: 5px;
   border-radius: 5%;
 }
+
+#forside-billboard figcaption{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 9rem;
+  background-color: #774a36d0;
+  padding: 2rem 5rem;
+  border: 2px solid #000;
+  border-radius: 40px;
+  align-items: center;
+}
+
+#forside-billboard figcaption p{
+  color: #104911;
+  font-size: 4vw;
+  font-family: 'Victor Mono', monospace;
+  font-weight: 600;
+}
+
+#forside-billboard figcaption a{
+  font-size: 3vw;
+  color: #c36f09;
+  font-weight: 800;
+  font-family: monospace;
+}
+
+
 
 body main section h1{
   font-family: sans-serif;
   text-align: center;
   border: 2px solid #000;
   border-radius: 20px;
+  background-color: #918888a2;
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 
 .logo-bilde-gruppe-1 {
@@ -92,10 +163,16 @@ body main section h1{
   height: auto;
 }
 
-.logo-bilde-gruppe-1 a button{
-  background-color: #fff;
+.logo-bilde-gruppe-1 a{
+  border: 1px solid #000;
+  border-radius: 5px;
 }
 
+.logo-bilde-gruppe-1 a figure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .logo-bilde-gruppe-2 {
   display: flex;
@@ -108,8 +185,15 @@ body main section h1{
   height: auto;
 }
 
-.logo-bilde-gruppe-2 a button{
-  background-color: #fff;
+.logo-bilde-gruppe-2 a{
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.logo-bilde-gruppe-2 a figure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body main section h2{
@@ -117,6 +201,9 @@ body main section h2{
   text-align: center;
   border: 2px solid #000;
   border-radius: 20px;
+  background-color: #918888a2;
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 
 .sko-gruppe-forside {
@@ -126,7 +213,7 @@ body main section h2{
 }
 
 .sko-gruppe-forside figure {
-  flex: 0 0 calc(50% - 10px);
+  flex: 0 0 calc(50% - 10px); /*Hentet fra Bing chat*/
   margin: 5px;
   box-sizing: border-box;
 }
@@ -155,8 +242,12 @@ body main section h2{
   justify-content: space-between;
 }
 
-.footer-area h3{
-  font-size: 1rem;
+.footer-area ul{
+  list-style: none;
+}
+
+.footer-area span{
+  font-size: 1.25rem;
 }
 
 .footer-area a{
@@ -168,10 +259,11 @@ body main section h2{
 .footer-area article{
   display: flex;
   justify-content: left;
+  flex-wrap: wrap;
 }
 
-.footer-area article{
-  flex-wrap: wrap;
+.footer-area figure{
+  margin: 0.5rem 1rem;
 }
 
 .footer-area img{
@@ -180,6 +272,10 @@ height: auto;
 border: 1px solid #fff;
 border-radius: 10px;
 padding: 5px;
+}
+
+.footer-area section{
+  display: inline;
 }
 
 #grid-container{
@@ -222,21 +318,21 @@ article{
   grid-template-rows: repeat(2, auto);
 }
 
-section1{
+#section1{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 
-section2{
+#section2{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 
-section3{
+#section3{
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -257,13 +353,14 @@ article{
   height: auto;
 }
 
-.produktside-topp figure2{
+.produktside-topp figure{
   display: flex;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  margin: 25px;
+  
 }
 
-.produktside-topp figure2 figcaption{
+.produktside-topp figure figcaption{
   color: #000;
   font-size: 2rem;
   font-weight: 400;
@@ -291,6 +388,15 @@ article{
   display: flex;
   justify-content: center;
 }
+
+.sko-gruppe-forside a figure figcaption ul li{
+  text-decoration: none ;
+}
+
+.sko-gruppe-forside a figure figcaption ul{
+  list-style: none;
+}
+
 
 @media screen and (max-width: 800px) {
   .nav-bar{
