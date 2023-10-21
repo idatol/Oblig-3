@@ -19,9 +19,9 @@
             </nav>
             <span>
                 <a href="index.html" id="logo-topp">LOGO</a>
-                <ul>
+                <ul id="sko-side-name-type-price">
                     <li>Shoe name</li>
-                    <li> <a>Shoe type</a></li>
+                    <li> <a class="grey-text">Shoe type</a></li>
                     <li>Price</li>
                 </ul>
             </span>
@@ -29,34 +29,60 @@
         <main>
             <div id="grid-container">
                 <figure>
-                    <img src="img/nike-air-force.webp" alt="nike-air-force1-white-blue-sneakers" class="responsive">
+                    <img src="img/Sko/nike-produkt-skoside1.webp" alt="nike-air-force1-white-blue-sneakers" class="responsive">
                 </figure>
                 <aside>
                     <figure>
-                        <img src="img/nike-air-force-sidenfra.webp" alt="nike-air-force-sidenfra" class="responsive">
-                        <img src="img/nike-air-force-undersiden.webp" alt="nike-air-force-undersiden" class="responsive">
-                        <img src="img/nike-air-force-ovenfor.webp" alt="nike-air-force-ovenfor" class="responsive">
+                        <img id="bilde1" src="img/Sko/nike-skoside2.webp" alt="nike-air-force-sidenfra" class="responsive">
+                        <img id="bilde2" src="img/Sko/nike-skoside3.webp" alt="nike-air-force-undersiden" class="responsive">
+                        <img id="bilde3" src="img/Sko/nike-skoside4.webp" alt="nike-air-force-ovenfor" class="responsive">
                     </figure>
                 </aside>
-                <article>
-                    <h2>Select size</h2>
-                    <ul>
-                        <li>38</li>
-                        <li>39</li>
-                        <li>40</li>
-                        <li>41</li>
-                        <li>41.5</li>
-                        <li>42</li>
-                        <li>42.5</li>
-                        <li>43</li>
-                        <li>43.5</li>
-                        <li>44</li>
-                        <li>44.5</li>
-                        <li>45</li>
-                        <li>46</li>
-                    </ul>
+            </div>
+            <hr style="border-top: 1px solid #000;">
+            <nav>
+                <article id="size-selector-java">
+                    <h2>Select size:</h2>
+                    <select name="size-select" id="size-select">
+                        <option value="36">36</option>
+                        <option value="36.5">36.5</option>
+                        <option value="37">37</option>
+                        <option value="37.5">37.5</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="41.5">41.5</option>
+                        <option value="42">42</option>
+                        <option value="42.5">42.5</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="45.5">45.5</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                    </select>
                 </article>
-            </div>    
+                <section id="color-cart-fav">
+                    <select id="color">
+                        <option value="ligth-blue">Ligth-blue</option>
+                        <option value="dark-blue">Dark blue</option>
+                        <option value="red">Red and yellow</option>
+                        <option value="custumize-your-self">Custumize your self</option>
+                    </select>
+                    <button>Add to cart</button>
+                    <button>Favorite</button>
+                </section>
+            </nav>
+            <hr style="border-top: 1px solid #000;">
+            <section id="shoe-info">
+                <h1>Information about the shoe</h1>
+                <p>Officia ut venison pork chop turkey landjaeger, laboris eu. Consectetur pastrami minim, labore chicken culpa short ribs ball tip tri-tip shoulder bresaola kielbasa anim tempor. Anim jerky doner, bresaola et turkey ut short loin exercitation.</p>
+                <ul id="grid-pic-skoside">
+                    <li> <img src="img/Sko/nike-skoside6.webp.png"></li>
+                    <li> <img src="img/Sko/nike-skoside5.webp.png"></li>
+                </ul>
+            </section>                    
         </main>
         <footer class="footer-area">
             <div id="grid-container-forside">
@@ -109,5 +135,15 @@
                 </article>    
             </div>
         </footer>
+        <script>
+            //This java script was generated by chat gpt
+            // Get the select element by its ID
+            var sizeSelect = document.getElementById("size-select");
+    
+            sizeSelect.addEventListener("change", function() {
+                var selectedSize = sizeSelect.value;
+                alert("Selected size: " + selectedSize);
+            });
+        </script>
     </body>
 </html>
