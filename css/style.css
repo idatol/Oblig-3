@@ -118,7 +118,7 @@ body main section article figure img{
   display: flex;
   flex-direction: column;
   margin-top: 9rem;
-  background-color: #774a36d0;
+  background-color: #8080809d;
   padding: 2rem 5rem;
   border: 2px solid #000;
   border-radius: 40px;
@@ -126,7 +126,7 @@ body main section article figure img{
 }
 
 #forside-billboard figcaption p{
-  color: #104911;
+  color: #6f1d1b;
   font-size: 4vw;
   font-family: 'Victor Mono', monospace;
   font-weight: 600;
@@ -134,7 +134,7 @@ body main section article figure img{
 
 #forside-billboard figcaption a{
   font-size: 3vw;
-  color: #c36f09;
+  color: #432818;
   font-weight: 800;
   font-family: monospace;
 }
@@ -423,56 +423,64 @@ padding: 5px;
   font-size: 3vw;
 }
 
+#grid-size-color-cart-fav{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
 #size-selector-java{
+  grid-column-start: 0;
+  grid-column: 1;
+  grid-row-start: 0;
+  grid-row-end: 1;
+}
+
+#color-selector{
+  grid-column-start: 0;
+  grid-column: 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#button-add-to-cart{
+  grid-column-start: 1;
+  grid-column: 2;
+  grid-row-start: 0;
+  grid-row-end: 1;
+}
+
+#button-favorite{
+  grid-column-start: 1;
+  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#size-select, #color{
+  width: 20vw;
+  height: 5vw;
+}
+
+#size-selector-java, #color-selector{
+  margin-left: 2rem;
+}
+
+#button-add-to-cart, #button-favorite{
   display: flex;
-  flex-direction: row;
   align-items: center;
-}
-
-#size-selector-java h2{
-  font-size: 3.5vw;
-  margin: 0;
-  width: auto;
   justify-content: center;
-}
+} 
 
-#size-select{
-  height: 2rem;
-  width: 16vw;
-  margin: 10px;
-  border: 1px solid #000;
-}
-
-#color{
-  height: 2rem;
-  width: 16vw;
-  margin: 10px;
-  border: 1px solid #000;
-}
-
-#color-cart-fav button{
-  height: 2rem;
-  width: 16vw;
-  margin: 10px;
+#button-add-to-cart button, #button-favorite button{
+  width: 20vw;
+  height: 10vw;
   background-color: #fff;
-  border: 1px solid #000;
+  border-radius: 5px;
 }
 
-#color-cart-fav{
-  display: flex;
-  justify-content: center;
-  gap: 15vw;
-  margin-top: 2rem;
-}
-
-#shoe-info h1{
-color: #000;
-text-align: center;
-font-size: 2rem;
-font-weight: 400;
-border: none;
-border-radius: 0;
-background-color: #fff;
+#button-add-to-cart button:hover, #button-favorite button:hover {
+  background-color: #8d99ae;
 }
 
 #shoe-info p{
