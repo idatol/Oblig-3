@@ -274,8 +274,10 @@ padding: 5px;
 .produktside-topp figure{
   display: flex;
   justify-content: center;
-  margin: 25px;
-  
+}
+
+.produktside-topp img{
+  margin: 1rem;
 }
 
 .produktside-topp figure figcaption{
@@ -313,10 +315,7 @@ padding: 5px;
 }
 
 .sko-gruppe-produktside figure {
-  flex-basis: calc(50% - 10px); /*Hentet fra Bing chat*/
-  margin: 5px;
-  display: flex;
-  flex-direction: column;
+  flex-basis: 40%;
 }
 
 .sko-gruppe-produktside img {
@@ -332,42 +331,6 @@ padding: 5px;
   color: #808080;
 }
 
-#grid-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, auto);
-}
-
-#grid-container figure{
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  margin-inline-start: 2rem;
-  margin-inline-end: 10px;
-}
-
-#bilde1{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-#bilde2{
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-#bilde3{
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
 #sko-side-name-type-price{
   list-style: none;
   display: flex;
@@ -375,66 +338,6 @@ padding: 5px;
   gap: 5px;
   padding: 10px;
   font-size: 3vw;
-}
-
-#grid-size-color-cart-fav{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-}
-
-#size-selector-java{
-  grid-column-start: 0;
-  grid-column: 1;
-  grid-row-start: 0;
-  grid-row-end: 1;
-}
-
-#color-selector{
-  grid-column-start: 0;
-  grid-column: 1;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-#button-add-to-cart{
-  grid-column-start: 1;
-  grid-column: 2;
-  grid-row-start: 0;
-  grid-row-end: 1;
-}
-
-#button-favorite{
-  grid-column-start: 1;
-  grid-column: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-#size-select, #color{
-  width: 20vw;
-  height: 5vw;
-}
-
-#size-selector-java, #color-selector{
-  margin-left: 2rem;
-}
-
-#button-add-to-cart, #button-favorite{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} 
-
-#button-add-to-cart button, #button-favorite button{
-  width: 20vw;
-  height: 10vw;
-  background-color: #fff;
-  border-radius: 5px;
-}
-
-#button-add-to-cart button:hover, #button-favorite button:hover {
-  background-color: #8d99ae;
 }
 
 #shoe-info h2{
@@ -488,6 +391,31 @@ padding: 5px;
   border: 2px solid #000;
 }
 
+#h1-produktside{
+  flex-basis: 100%;
+  font-family: sans-serif;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 6vw;
+  font-weight: 400;
+  margin: 1rem 20%;
+}
+
+#h2-produktside{
+  flex-basis: 100%;
+  font-family: sans-serif;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 10px;
+  font-size: 4vw;
+  font-weight: 400;
+  margin: 1rem 20%;
+}
+
+
+
 @media screen and (max-width: 800px) {
   .nav-bar{
     display: none;
@@ -532,6 +460,49 @@ padding: 5px;
     padding: 1rem 30%;
   }
 
+  #bilde-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 2rem;
+  }
+
+  
+#size-selector-java{
+  float: left;
+  margin: 1rem 5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#color-selector{
+  float: right;
+  margin: 1rem 5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#button-add-to-cart{
+  float: left;
+  margin: 1rem 5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#button-favorite{
+  float: right;
+  margin: 1rem 5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
 }
 
 @media screen and (min-width: 800px){
@@ -572,5 +543,87 @@ padding: 5px;
     font-size: 6vw;
     font-weight: 400;
     margin: 1rem 20%;
+  }
+
+  #main-skoside{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #bilde-selector {
+    display: flex;
+    width: 50vw;
+    margin: 2rem;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+  #size-selector-java{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    font-size: 2vw;
+    padding: 4rem 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  #size-select{
+    background-color: #fff;
+    border: 2px solid #000;
+    width: 30%;
+    height: 2rem;
+  }
+
+  #color-selector{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    font-size: 2vw;
+    padding: 4rem 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  #color {
+    background-color: #fff;
+    border: 2px solid #000;
+    width: 50%;
+    height: 2rem;
+    font-size: medium;
+  }
+
+  #btn-skoside{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+  }
+
+  #shoe-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  #grid-pic-skoside{
+    display: flex;
+    gap: 10rem;
+    margin: 10rem 0;
   }
 }
