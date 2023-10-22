@@ -145,18 +145,19 @@ body main section h1{
 
 .logo-bilde-flex{
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
 }
 
 .logo-bilde-flex article{
-  flex-basis: calc(100% / 3); /* kalkulert av chat gpt */
+  flex-basis: 30%;
+  min-width: 300px;
   border: 2px solid #000;
 }
 
 .logo-bilde-flex img{
   width: 100%;
-  height: auto;
 }
 
 body main section h2{
