@@ -21,7 +21,7 @@
                 </ul>
             </nav>
             <nav>
-                <a href="index.html" id="logo-topp">LOGO</a>
+                <a href="index.html" id="logo-topp">ShoeDrope</a>
                 <ul id="sko-side-name-type-price">
                     <li>Shoe name</li>
                     <li> <a class="grey-text">Shoe type</a></li>
@@ -30,61 +30,69 @@
             </nav>
         </header>
         <main id="main-skoside">
-            <div id="bilde-selector">
-                <button onclick="changeImage(-1)"><i class="fa-solid fa-arrow-left"></i></button>
-                <img id="galleryImage" src="img/Sko/nike-produkt-skoside1.webp" alt="nike-air-force1-white-blue-sneakers" class="responsive">
-                <button onclick="changeImage(1)"><i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <nav id="grid-size-color-cart-fav">
-                <article id="size-selector-java">
-                    <h2>Select size:</h2>
-                    <select id="size-select">
-                        <option value="36">36</option>
-                        <option value="36.5">36.5</option>
-                        <option value="37">37</option>
-                        <option value="37.5">37.5</option>
-                        <option value="38">38</option>
-                        <option value="39">39</option>
-                        <option value="40">40</option>
-                        <option value="41">41</option>
-                        <option value="41.5">41.5</option>
-                        <option value="42">42</option>
-                        <option value="42.5">42.5</option>
-                        <option value="43">43</option>
-                        <option value="44">44</option>
-                        <option value="45">45</option>
-                        <option value="45.5">45.5</option>
-                        <option value="46">46</option>
-                        <option value="47">47</option>
-                    </select>
-                </article>
-                <article id="color-selector">
-                    <h2>Select color:</h2>
-                    <select id="color">
-                        <option value="ligth-blue">Ligth-blue</option>
-                        <option value="dark-blue">Dark blue</option>
-                        <option value="red">Red and Yellow</option>
-                        <option value="custumize-your-self">Custumize your self</option>
-                    </select>
-                </article>
-                <section id="btn-skoside">
-                    <article id="button-add-to-cart">    
-                        <button>Add to cart <i class="fa-solid fa-cart-shopping"></i></button>
+            <article>
+                <div id="bilde-selector">
+                    <button onclick="changeImage(-1)"><i class="fa-solid fa-arrow-left"></i></button>
+                    <img id="galleryImage" src="img/Sko/nike-produkt-skoside1.webp" alt="nike-air-force1-white-blue-sneakers" class="responsive">
+                    <button onclick="changeImage(1)"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </article>
+            <section id="valgmuligheter-skoside">
+                <nav id="size-and-color">
+                    <article id="size-selector">
+                        <h2>Select size:</h2>
+                        <select id="size-select">
+                            <option value="36">36</option>
+                            <option value="36.5">36.5</option>
+                            <option value="37">37</option>
+                            <option value="37.5">37.5</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="41.5">41.5</option>
+                            <option value="42">42</option>
+                            <option value="42.5">42.5</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                            <option value="45">45</option>
+                            <option value="45.5">45.5</option>
+                            <option value="46">46</option>
+                            <option value="47">47</option>
+                        </select>
                     </article>
-                    <article id="button-favorite">
-                    <button>Favorite <i class="fa-regular fa-heart"></i></button> 
+                    <article id="color-selector">
+                        <h2>Select color:</h2>
+                        <select id="color">
+                            <option value="ligth-blue">Light blue</option>
+                            <option value="ligth-blue">Ligth-blue</option>
+                            <option value="dark-blue">Dark blue</option>
+                            <option value="red">Red and Yellow</option>
+                            <option value="custumize-your-self">Custumize your self</option>
+                        </select>
                     </article>
-                </section>    
-            </nav>
+                </nav>
+                <article>
+                    <section id="btn-skoside">
+                        <article id="button-add-to-cart">
+                            <button>Add to cart <i class="fa-solid fa-cart-shopping"></i></button>
+                        </article>
+                        <article id="button-favorite">
+                            <button>Favorite <i class="fa-regular fa-heart"></i></button>
+                        </article>
+                    </section>
+                </article>
+            </section>
+            <hr id="linje" style="border-top: 1px solid #000;">
             <section id="shoe-info">
                 <h2>Information about the shoe</h2>
                 <p>Officia ut venison pork chop turkey landjaeger, laboris eu. Consectetur pastrami minim, labore chicken culpa short ribs ball tip tri-tip shoulder bresaola kielbasa anim tempor. Anim jerky doner, bresaola et turkey ut short loin exercitation.</p>
                 <ul id="grid-pic-skoside">
-                    <li> <img src="img/Sko/nike-skoside6.webp.png" alt="close-up-of-shoe"></li>
-                    <li> <img src="img/Sko/nike-skoside5.webp.png" alt="close-up-of-shoe"></li>
+                    <li><img src="img/Sko/nike-skoside6.webp.png" alt="close-up-of-shoe"></li>
+                    <li><img src="img/Sko/nike-skoside5.webp.png" alt="close-up-of-shoe"></li>
                 </ul>
-            </section>                    
-        </main>
+            </section>
+        </main>        
         <footer class="footer-area">
             <div id="grid-container-forside">
                 <section id="section1">
