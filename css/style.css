@@ -427,7 +427,11 @@ padding: 5px;
   margin: 1rem 20%;
 }
 
-
+#tabel-analyse{
+    border-collapse: separate;
+    border-spacing: 50px 0;
+    border: 1px solid #000;
+}
 
 @media screen and (max-width: 800px) {
   .nav-bar{

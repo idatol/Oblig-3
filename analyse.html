@@ -158,7 +158,7 @@
                 <h2>Analyse av SEO og UU</h2>
                 <section>
                     <h3>Ligthouse analyse/SEO</h3>
-                    <article>
+                    <article id="forside-analyse">
                         <section>
                             <h4>Forside mobil</h4>
                             <article>
@@ -183,7 +183,7 @@
                             </article>
                         </section>
                     </article>
-                    <article>
+                    <article id="produktside-analyse">
                         <section>
                             <h4>Produktside mobil</h4>
                             <article>
@@ -194,7 +194,8 @@
                                     Som man kan se på bilde under er det "/" i brødsmulestien som ikke har en href, og siden det er et a element er det noe som må være med.
                                     Jeg tenker å løse dette ved å enten fjerne a elementet slik at "/" bare er et li element eller legge "/" til etter home knappen lom dette: "Home /".
                                 </p>
-                                <figure><img src="img/Lighthouse-analyse/Produktside-mobil-brodsmulesti.png" alt="Lighthouse-analyse illustrerer feil i brødsmulestien"></figure>
+                                <figure><img src="img/Lighthouse-analyse/Produktside-nav-path.png" alt="Lighthouse-analyse illustrerer feil i brødsmulestien"></figure>
+                            </article>
                         </section>
                         <section>
                             <h4>Produktside desktop</h4>
@@ -206,11 +207,194 @@
                             </article>
                         </section>
                     </article>
+                    <article id="skoside-analyse">
+                        <section>
+                            <h4>Skoside mobil</h4>
+                            <article>
+                                <figure><img src="img/Lighthouse-analyse/Skoside-mobil-sammendrag.png" alt="Lighthouse-analyse av skosiden på mobilversjon"></figure>
+                                <p>
+                                    Tilbakemeldingene her er også om å legge til meta data og at knappene i footeren min må ha større klikkeområdet.
+                                    I tilleg fikk jeg tilbakemeling om at a elementet som holder på «shoe type» ikke har et href element, se bilde under. 
+                                    Dette tenker jeg å løse ved å ta bort a elementet og deretter legge klassen grey-text på li elementet.
+                                </p>
+                                <figure><img src="img/Lighthouse-analyse/Skoside-a-element.png" alt="Lighthouse-analyse illustrerer feil i med a element"></figure>
+                            </article>
+                        </section>
+                        <section>
+                            <h4>Skoside desktop</h4>
+                            <article>
+                                <figure><img src="img/Lighthouse-analyse/Skoside-desktop-sammendrag.png" alt="Lighthouse-analyse av skosiden på desktop"></figure>
+                                <p>
+                                    Her fikk jeg de samme tilbakemeldingen som for mobilversjone. Legge til meta data og at a elementet trenger en href.   
+                                </p>
+                            </article>
+                        </section>
+                    </article>
                 </section>
                 <section>
                     <h3>Wave web analyse/Universel Utforming (UU)</h3>
-
+                    <article>
+                        <h4>Forside</h4>
+                        <aside>
+                            <img src="img/WAVE_web_analyse/Forside-analyse.png" alt="Skjermbilde forside analyse fra WAVE">
+                        </aside>
+                        <p>
+                            Errors: 
+                            <br>1 error den ineberte at jeg ikke har en lable for search baren min. Dette er noe som er viktig å tamed på grun av inklusivitet av brukere som foreksemepl avhenger av opplesingsverktøy. 
+                            <br>Contrast errors: 
+                            <br>12 contrast errors er på teksten som viser «Price». Denne teksten er lysegrå og på en helt hvit bakrun er den derfor vanskelig å se på grunn av den lave kontrasten.
+                            <br>Alerts: 
+                            <br>1 posible heading alert på «Autumn Sale», her vil den at jeg skal kalle det en heading istedenfor et P element. 
+                            <br>18 broken same-page link, denne alerten oppstår fordi jeg har referert til en side som ikke eksisterer. 
+                            Denne kom blant annet på alle elementene i bunteksten, eks: href="#womens-shoes-site". 
+                            Her referere jeg til noe på samme side som ikke eksisterer og det liker ingen. 
+                            Siden dette ikke er en ekte nettside er dette noe jeg ikke tenker å gjørde noe med, men jeg er klar over hva alerten betyr og hvordan den kunne blitt fikset.
+                            <br>16 Redundant link, kommer på alle utenom den første gangen jeg refererer videre til produktsiden eller skosiden. 
+                            Igjen dette noe jeg ikke tenker å gjørde noe med, men jeg er klar over hva alerten betyr og hvordan den kunne blit fikset. 
+                        </p>
+                    </article>
+                    <article>
+                        <h4>Produktside</h4>
+                        <aside>
+                            <img src="img/WAVE_web_analyse/Produktside-analyse.png" alt="Skjermbilde produktside analyse fra WAVE">
+                        </aside>
+                        <p>
+                            Errors:
+                            <br>1 error den ineberte at jeg ikke har en lable for search baren min. Dette er noe som er viktig å tamed på grun av inklusivitet av brukere som foreksemepl avhenger av opplesingsverktøy.
+                            <br>Contrast errors:
+                            <br>13 contrast errors er på teksten som viser «Price» og «Brand» i brødsmulestien. Denne teksten er lysegrå og på en helt hvit bakrun er den derfor vanskelig å se på grunn av den lave kontrasten.
+                            <br>Alerts:
+                            <br>1 A nearby image has the same alternative tex alert, jeg er ikke helt sikker på denne.
+                            <br>25 broken same-page link, denne alerten oppstår fordi jeg har referert til en side som ikke eksisterer. 
+                            Denne kom blant annet på alle elementene i bunteksten, eks: href="#womens-shoes-site". 
+                            Her referere jeg til noe på samme side som ikke eksisterer og det liker ingen.
+                            <br>12 Redundant link, kommer på alle utenom den første gangen jeg refererer videre til produktsiden eller skosiden. 
+                            Igjen dette noe jeg ikke tenker å gjørde noe med, men jeg er klar over hva alerten betyr og hvordan den kunne blit fikset.
+                        </p>
+                    </article>
+                    <article>
+                        <h4>Skoside</h4>
+                        <aside>
+                            <img src="img/WAVE_web_analyse/Skoside-analyse.png" alt="Skjermbilde skoside analyse fra WAVE">
+                        </aside>
+                        <p>
+                            Errors:
+                            <br>2 Empty buttons errors på knappene for bildene av skoene. Denne oppstår fordi det ikke er kodet noe til knappene og det kan derfor være vanskelig for brukere å skjønne hva knappen er til.
+                            <br>Contrast errors:
+                            <br>1 contrast errors er på teksten som viser «Price». Denne teksten er lysegrå og på en helt hvit bakrun er den derfor vanskelig å se på grunn av den lave kontrasten. 
+                            <br>Alerts:
+                            <br>1 A nearby image has the same alternative tex alert, jeg er ikke helt sikker på denne.
+                            <br>1 Missing first level heading, denne oppstår fordi det ikke er noen H1 på siden. 
+                            <br>18 broken same-page link, denne alerten oppstår fordi jeg har referert til en side som ikke eksisterer. 
+                            Denne kom blant annet på alle elementene i bunteksten, eks: href="#womens-shoes-site". 
+                            Her referere jeg til noe på samme side som ikke eksisterer og det liker ingen.                           
+                        </p>
+                    </article>
                 </section>
+            </section>
+            <section id="chat-gpt">
+                <h2>Chat gpt analyse av SEO og UU</h2>
+                <article>
+                    <h3>Forside</h3>
+                    <h4>SEO(Søkemotoroptimalisering):</h4>
+                        <ul>
+                            <li>HTML Struktur : Koden begynner med en riktig `!DOCTYPE html`-deklarasjon og har en god hierarkisk struktur med head og body-elementer. Dette er viktig for søkemotorer.</li>
+                            <li>Metabeskrivelser : Koden har ikke inkludert meta-beskrivelser (meta description). Meta-beskrivelser hjelper søkemotorer med å forstå innholdet på siden bedre og bør inkluderes for å forbedre SEO.</li>
+                            <li>Bildeattributter : Bildeelementene har `alt`-attributter som gir en beskrivelse av bildene. Dette er bra for SEO og UU.</li>
+                            <li>Lenker : Lenkene til andre sider har en hashtag (#) i href-attributtene, noe som indikerer at de er til samme side. Hvis det er lenker til andre sider, bør de inneholde gyldige URL-er.</li>
+                            <li>CSS-filer : CSS-filene er inkludert via eksterne lenker, noe som er en god praksis. Imidlertid, det er en liten feil i `type`-attributtet i lenken til "normalize.css". Det bør være `text/css` i stedet for `tex/css`.</li>
+                        </ul>
+                    <h4><br>UU (Universell utforming):</h4>
+                        <ul>
+                            <li>HTML Struktur : Koden har en ganske ryddig struktur som kan være lett tilgjengelig for skjermlesere. Det er imidlertid viktig å legge til riktig semantikk, som `nav`, `main`, `header`, osv., for å forbedre UU.</li>
+                            <li>Skjermleservennlig tekst : Lenketekstene ser ut til å være meningsfulle, men det er alltid viktig å sørge for at lenketekster er beskrivende og gir klar informasjon om hvor lenkene fører til.</li>
+                            <li>Bildebeskrivelser : Som nevnt tidligere, er det godt at bildene har `alt`-attributter, men disse bør være informative og beskrive bildet nøyaktig for blinde og svaksynte brukere.</li>
+                            <li>Kontrast og tekststørrelse : Sjekk kontrasten mellom tekst og bakgrunn for å sikre god lesbarhet. Pass også på at tekststørrelsen er tilstrekkelig for alle brukere.</li>
+                            <li>Skjermleservennlige elementer : Bruk av ARIA-attributter og riktig semantikk kan forbedre tilgjengeligheten betydelig.</li>
+                            <li>Skjulte lenker : Hvis noen av lenkene er skjulte (for eksempel med CSS), må du sørge for at de er tilgjengelige for skjermlesere.</li>
+                        </ul>
+                    <p>
+                        Generelt sett trenger koden mer arbeid for å oppnå god SEO og UU. Dette kan oppnås ved å forbedre HTML-strukturen, inkludere relevante meta-beskrivelser, 
+                        forbedre lenketekster og beskrivelser av bilder, og sørge for at alle elementer er tilgjengelige og forståelige for ulike typer brukere.
+                    </p>
+                </article>
+                <article>
+                    <h3>Produktside</h3>
+                    <h4>SEO (Søkemotoroptimalisering):</h4>
+                        <ul>
+                            <li>HTML-struktur : Koden har en grunnleggende HTML-struktur med head og body-elementer, som er en god start for SEO.</li>
+                            <li>Metabeskrivelse : Koden mangler en meta-beskrivelse. Det anbefales å legge til en beskrivelse som oppsummerer innholdet på siden for søkemotorer.</li>
+                            <li>Lenketekster : Lenketekstene ser ut til å være meningsfulle og relevante, noe som er viktig for SEO. Men du kan vurdere å lage mer beskrivende lenker for bedre forståelse.</li>
+                            <li>Bildeattributter : Bildeelementene har `alt`-attributter, som er positivt for både SEO og UU. Imidlertid bør du sørge for at disse attributtene gir beskrivelser som er relevante for bildene.</li>
+                            <li>CSS-filer : CSS-filen er inkludert via en ekstern lenke, noe som er god praksis.</li>
+                        </ul>
+                    <h4><br>UU (Universell utforming):</h4>
+                        <ul>
+                            <li>HTML-struktur : Koden har en relativt ryddig struktur med bruk av HTML5-elementer som `header`, `nav`, `main`, og `footer`. Dette kan bidra til å forbedre tilgjengeligheten.</li>
+                            <li>Skjermleservennlig tekst : Lenketekstene ser ut til å være meningsfulle, men det kan være lurt å tilføye mer beskrivende tekst for enkel navigasjon.</li>
+                            <li>Bildebeskrivelser : Som nevnt tidligere, er det positivt at bildene har `alt`-attributter, men disse bør gi detaljerte beskrivelser som gir mening for brukere med skjermlesere.</li>
+                            <li>Kontrast og tekststørrelse : Kontroller kontrasten mellom tekst og bakgrunn for god lesbarhet. Forsikre deg også om at tekststørrelsen er tilstrekkelig for alle brukere.</li>
+                            <li>Skjermleservennlige elementer : Bruk av ARIA-attributter og riktig semantikk kan ytterligere forbedre tilgjengeligheten. For eksempel kan du bruke ARIA-landemerker for å gi klarhet i strukturen på siden.</li>
+                            <li>Skjulte lenker : Hvis noen av lenkene er skjulte (for eksempel med CSS), må du sørge for at de er tilgjengelige for skjermlesere.</li>
+                        </ul>
+                    <p>
+                        I likhet med den forrige koden, trenger denne koden også litt arbeid for å forbedre både SEO og UU. 
+                        Dette kan oppnås ved å forbedre HTML-strukturen, inkludere relevante meta-beskrivelser, forbedre lenketekster og beskrivelser av bilder, 
+                        og sørge for at alle elementer er tilgjengelige og forståelige for ulike typer brukere.
+                    </p>
+                </article>
+                <article>
+                    <h3>Skoside:</h3>
+                    <h4>SEO(Søkemotoroptimalisering)</h4>
+                        <ul>
+                            <li>Meta Tags: Du har riktig satt opp viewport og charset i head-seksjonen, men det mangler en meta-beskrivelse (meta description). En beskrivelse gir søkemotorer og brukere en kort oppsummering av innholdet på siden og kan påvirke klikkfrekvensen fra søkeresultatene.</li>
+                            <li>URL-struktur: URL-ene dine ser ut til å være statiske. Hvis du har dynamisk innhold, kan det være nyttig å inkludere nøkkelord i URL-strukturen for å forbedre søkemotoroptimaliseringen.</li>
+                            <li>Alt-attributter: Du bruker alt-attributtet for bildene, noe som er bra for tilgjengelighet, men du kan også inkludere nøkkelord eller beskrivende tekst for å forbedre SEO.</li>
+                            <li>JavaScript-generert innhold: Søkemotorer kan ha problemer med å indeksere innhold generert med JavaScript. Siden bildeskifteren og størrelsesvelgeren er JavaScript-basert, kan det være lurt å sørge for at viktig innhold også er tilgjengelig uten JavaScript.</li>
+                        </ul>
+                    <h4><br>UU (Universell utforming):</h4>
+                        <ul>
+                            <li>Navigasjon: Navigasjonen er enkel og lettforståelig. Det er bra for brukervennligheten. Imidlertid kan "Help," "Orders & Returns," osv., trenge bedre beskrivende lenketekster for å være mer forståelig for skjermlesere.</li>
+                            <li>Skjemaelementer: Bruken av skjemaelementer (for størrelses- og fargevalg) er bra, men det kan være lurt å legge til mer beskrivende tekst eller ARIA-attributter for å gjøre det tydeligere for skjermlesere.</li>
+                            <li>Innhold: Informasjonen om skoen kan være mer strukturert for å være lettere å lese. Bruk av overskrifter og avsnittsstruktur kan forbedre tilgjengeligheten og leseopplevelsen.</li>
+                            <li>Sosiale medier: Inkluderingen av sosiale medieikoner er bra, men du kan vurdere å legge til alternative tekster for ikonene for bedre tilgjengelighet.</li>
+                            <li>JavaScript: JavaScript-generert kode for bildekarusellen fungerer bra, men sørg for at viktig funksjonalitet er tilgjengelig uten JavaScript for brukere som er avhengige av det.</li>
+                        </ul>
+                    <p>
+                        I likhet med den forrige koden, trenger denne koden også litt arbeid for å forbedre både SEO og UU. 
+                        Dette kan oppnås ved å inkludere relevante meta-beskrivelser, forbedre lenketekster og beskrivelser av bilder, 
+                        og sørge for at alle elementer er tilgjengelige og forståelige for ulike typer brukere.
+                    </p>
+                </article>
+            </section>
+            <section id="table/results">
+                <h2>Sammenligning av resultat</h2>
+                <table id="tabel-analyse">
+                    <tr>
+                        <th></th>
+                        <th>Lighthouse resultat</th>
+                        <th>WAVE web resultat</th>
+                        <th>Chat gpt resultat</th>
+                    </tr>
+                    <tr>
+                        <td> Forside</td>
+                        <td>Meta data og større klikkeområdet i footer.</td>
+                        <td>Label mangler på søkefeltet, grå text har for lav kontrast, om kansje "autumn-sale" skulle vert et h element.</td>
+                        <td>Meta data, ugyldi linker(#), lenke og bildebeskrivelse og ARIA-attributet</td>
+                    </tr>
+                    <tr>
+                        <td>Produktside</td>
+                        <td>Meta data, større klikkeområdet i footer og ugyldig a tag i brødsmulestien.</td>
+                        <td>Lable mangler på søkefeltet og grå text har for lav kontrast</td>
+                        <td>Meta data, lenke og bildebeskrivelse og ARIA-attributet</td>
+                    </tr>
+                    <tr>
+                        <td>Skoside</td>
+                        <td>Meta data, større klikkeområdet i footer og et ugyldig a element("Shoe type")</td>
+                        <td>Tome knapper, grå text har for lav kontrast og mangler lable på select color og size drop down menyene</td>
+                        <td>Meta data, lenke og bildebeskrivelse</td>
+                    </tr>
+                </table>
             </section>
         </main>
     </body>
