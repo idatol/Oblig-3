@@ -3,236 +3,319 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <title>Produktside/brand</title>
+        <meta name="author" content="Ida Tollaksen">
+        <meta name="description" content="ShoeDrope all new nike shoes in one online store">
+        <!--Legger til fav icon -->
+        <link rel="icon" type="image/x-icon" href="img/Nike-Logo.png">
+        <!--facbook meta data-->
+        <meta property="og:title" content="ShoeDrope - Nike shoes">
+        <meta property="og:url" content="https://schema.org/AggregateRating">
+        <meta property="og:description" content="ShoeDrope online store for all new and popular nike shoes">
+        <meta property="og:image" content="https://cdn.pixabay.com/photo/2016/11/19/18/06/feet-1840619_1280.jpg"> <!--bruker samme bildet som er på "Autumn sale" posteren-->
+        <!--kobling til Css dokument og legger til iconer fra font awsome-->
         <link href="css/style.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="tex/css">
+        <link href="css/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
+        <link href="css/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
+        <link href="css/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
+        
+        <title>ShoeDrope - Nike Shoes</title>
+        
     </head>
     <body>
         <header>
             <nav>
-                <ul class="nav-bar">
-                    <li> <a href="#help-site">Help</a></li>
-                    <li> <a href="#Orders-and-returns">Orders & returns</a></li>
-                    <li> <a href="#Free-shipping">Free shipping over $50</a></li>
-                    <li> <a href="#Your-cart">Cart</a></li>
-                    <li> <a href="#Login">Login</a></li>
+                <ul class="nav-bar" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"> 
+                        <a href="#help-site" itemprop="item">Help</a>
+                        <meta itemprop="position" content="1">
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"> 
+                        <a href="#Orders-and-returns" itemprop="item">Orders & returns</a>
+                        <meta itemprop="position" content="2">
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="analyse.html" itemprop="item">Analyse page</a>
+                        <meta itemprop="position" content="3">
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="#Your-cart" itemprop="item">Cart</a>
+                        <meta itemprop="position" content="4">
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"> 
+                        <a href="#Login" itemprop="item">Login</a>
+                        <meta itemprop="position" content="5">
+                    </li>
                 </ul>
             </nav>
-            <section>
-                <a href="index.html" id="logo-topp">ShoeDrope</a>
-                <ul>
-                    <li> <a href="index.html">Home</a></li>
-                    <li> <a>/</a></li>
-                    <li> <a href="produkt.html" class="on-site">Brand</a></li>   
+            <section itemscope itemtype="https://schema.org/Organization">
+                <a href="index.html" id="logo-topp" itemprop="logo">ShoeDrope</a>
+                <ul id="breadcrumblist-produkt" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"> 
+                        <a href="index.html" itemprop="item">Home</a>
+                        <meta itemprop="position" content="1">
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <div itemprop="item">/</div>
+                        <meta itemprop="position" content="2">
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"> 
+                        <a href="produkt.html" class="on-site" itemprop="item">Brand</a>
+                        <meta itemprop="position" content="3">
+                    </li>   
                 </ul>
             </section>
         </header>
         <main>
             <section>
-                <article class="produktside-topp">
-                        <img src="img/nike-side.jpg" alt="nike-billboard-shoes-at-sunset" class="responsive">
+                <article class="produktside-topp" itemscope itemtype="https://schema.org/ImageObject">
+                    <img src="img/nike-side.jpg" alt="Nike billboard of shoes at sunset" class="responsive" itemprop="image">
                     <figure>
-                        <figcaption>NIKE</figcaption>
-                        <img src="img/Nike-swosh-PNG.png" alt="nike-logo" class="side-logo">
+                        <figcaption itemprop="caption">NIKE</figcaption>
+                        <img src="img/Nike-swosh-PNG.png" alt="Nike logo" class="side-logo" itemprop="image">
                     </figure>
-                </article>
+                </article>                
                 <nav>
-                    <ul class="nav-bar">
-                        <li><a href="#Sneakers-link">Sneakers</a></li>
-                        <li><a href="#Skater-shoes-link">Skater shoes</a></li>
-                        <li><a href="#Workout-shoes-link">Workout</a></li>
-                        <li><a href="#Fotball-shoes-link">Fotball</a></li>
-                        <li><a href="#Running-shoes-link">Running</a></li>
-                        <li><a href="#Jordan-shoes-link">Jordan</a></li>
+                    <ul class="nav-bar" itemscope itemtype="https://schema.org/BreadcrumbList">
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="#Sneakers-link" itemprop="item">Sneakers</a>
+                            <meta itemprop="position" content="1">
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="#Skater-shoes-link" itemprop="item">Skater shoes</a>
+                            <meta itemprop="position" content="2">
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="#Workout-shoes-link" itemprop="item">Workout</a>
+                            <meta itemprop="position" content="3">
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="#Fotball-shoes-link" itemprop="item">Fotball</a>
+                            <meta itemprop="position" content="4">
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="#Running-shoes-link" itemprop="item">Running</a>
+                            <meta itemprop="position" content="5">
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="#Jordan-shoes-link" itemprop="item">Jordan</a>
+                            <meta itemprop="position" content="6">
+                        </li>
                     </ul>
                 </nav>
             </section>
-            <section>
-                <span class="search-bar-and-a">
-                    <input id="Search" type="text" placeholder="Search ...">
-                    <a href="#Filter">Filters </a>
+            <section itemscope itemtype="https://schema.org/WebSite">
+                <span class="search-bar-and-a" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
+                    <meta itemprop="target" content="/search?q={search_term_string}">
+                    <input id="Search" type="text" placeholder="Search ..." itemprop="query-input" required>
+                    <a href="#Filter">Filters</a>
                 </span>
-            </section>
-            <section>
+            </section>            
+            <section itemscope itemtype="https://schema.org/ItemList">
                 <h1 id="h1-produktside">Toppvalgte</h1>
-                <article class="sko-gruppe-produktside">
-                    <figure>
-                        <a href="sko-side.html">
-                            <img src="img/Air-Jordan-link-skoside.jpg" alt="air-jordans-blue-and-white">
+                <article class="sko-gruppe-produktside" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <figure itemscope itemtype="https://schema.org/Product">
+                        <a href="sko-side.html" itemprop="url">
+                            <img src="img/Air-Jordan-link-skoside.jpg" alt="air-jordans-blue-and-white" itemprop="image">
                         </a>
                         <figcaption>                            
-                            <p>Shoe name</p>
-                            <p class="grey-text">Price</p>
-                            <p>Type of shoe</p>
+                            <p itemprop="name">Shoe name</p>
+                            <p class="grey-text" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                Price: <span itemprop="price" content="200">200</span><span itemprop="priceCurrency" content="USD"> $</span>
+                            </p>
+                            <p itemprop="category">Type of shoe</p>
                         </figcaption>
                     </figure>
-                    <figure>
-                        <a href="sko-side.html">
-                            <img src="img/Air-Jordan-link-skoside.jpg" alt="air-jordans-blue-and-white">
+                    <figure itemscope itemtype="https://schema.org/Product">
+                        <a href="sko-side.html" itemprop="url">
+                            <img src="img/Air-Jordan-link-skoside.jpg" alt="air-jordans-blue-and-white" itemprop="image">
                         </a>
                         <figcaption>                            
-                            <p>Shoe name</p>
-                            <p class="grey-text">Price</p>
-                            <p>Type of shoe</p>
+                            <p itemprop="name">Shoe name</p>
+                            <p class="grey-text" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                Price: <span itemprop="price" content="200">200</span><span itemprop="priceCurrency" content="USD"> $</span>
+                            </p>
+                            <p itemprop="category">Type of shoe</p>
                         </figcaption>
                     </figure>
-                    <figure>
-                        <a href="sko-side.html">
-                            <img src="img/Air-Jordan-link-skoside.jpg" alt="air-jordans-blue-and-white">
+                    <figure itemscope itemtype="https://schema.org/Product">
+                        <a href="sko-side.html" itemprop="url">
+                            <img src="img/Air-Jordan-link-skoside.jpg" alt="air-jordans-blue-and-white" itemprop="image">
                         </a>
                         <figcaption>                            
-                            <p>Shoe name</p>
-                            <p class="grey-text">Price</p>
-                            <p>Type of shoe</p>
+                            <p itemprop="name">Shoe name</p>
+                            <p class="grey-text" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                Price: <span itemprop="price" content="200">200</span><span itemprop="priceCurrency" content="USD"> $</span>
+                            </p>
+                            <p itemprop="category">Type of shoe</p>
                         </figcaption>
                     </figure>
                 </article>
-                <article class="sko-gruppe-produktside">
-                    <figure>
-                        <a href="sko-side.html">
-                            <img src="img/Air-Jordan.jpg" alt="air-jordans-blue-and-white">
+                <article class="sko-gruppe-produktside" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <figure itemscope itemtype="https://schema.org/Product">
+                        <a href="sko-side.html" itemprop="url">
+                            <img src="img/Air-Jordan.jpg" alt="air-jordans-blue-and-white" itemprop="image">
                         </a>
                         <figcaption>                            
-                            <p>Shoe name</p>
-                            <p class="grey-text">Price</p>
-                            <p>Type of shoe</p>
+                            <p itemprop="name">Shoe name</p>
+                            <p class="grey-text" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                Price: <span itemprop="price" content="200">200</span><span itemprop="priceCurrency" content="USD"> $</span>
+                            </p>
+                            <p itemprop="category">Type of shoe</p>
                         </figcaption>
                     </figure>
-                    <figure>
-                        <a href="sko-side.html">
-                            <img src="img/Air-Jordan.jpg" alt="air-jordans-blue-and-white">
+                    <figure itemscope itemtype="https://schema.org/Product">
+                        <a href="sko-side.html" itemprop="url">
+                            <img src="img/Air-Jordan.jpg" alt="air-jordans-blue-and-white" itemprop="image">
                         </a>
                         <figcaption>                            
-                            <p>Shoe name</p>
-                            <p class="grey-text">Price</p>
-                            <p>Type of shoe</p>
+                            <p itemprop="name">Shoe name</p>
+                            <p class="grey-text" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                Price: <span itemprop="price" content="200">200</span><span itemprop="priceCurrency" content="USD"> $</span>
+                            </p>
+                            <p itemprop="category">Type of shoe</p>
                         </figcaption>
                     </figure>
-                    <figure>
-                        <a href="sko-side.html">
-                            <img src="img/Air-Jordan.jpg" alt="air-jordans-blue-and-white">
+                    <figure itemscope itemtype="https://schema.org/Product">
+                        <a href="sko-side.html" itemprop="url">
+                            <img src="img/Air-Jordan.jpg" alt="air-jordans-blue-and-white" itemprop="image">
                         </a>
                         <figcaption>                            
-                            <p>Shoe name</p>
-                            <p class="grey-text">Price</p>
-                            <p>Type of shoe</p>
+                            <p itemprop="name">Shoe name</p>
+                            <p class="grey-text" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                Price: <span itemprop="price" content="200">200</span><span itemprop="priceCurrency" content="USD"> $</span>
+                            </p>
+                            <p itemprop="category">Type of shoe</p>
                         </figcaption>
                     </figure>
                 </article>
             </section>
-            <section>
+            <section itemscope itemtype="https://schema.org/ItemList">
                 <h2 id="h2-produktside">Air Force 1</h2>
-                <article class="sko-gruppe-produktside">
-                    <figure>
-                        <a href="sko-side.html">
-                            <img src="img/Air-Jordan.jpg" alt="air-jordans-blue-and-white">
+                <article class="sko-gruppe-produktside" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <figure itemscope itemtype="https://schema.org/Product">
+                        <a href="sko-side.html" itemprop="url">
+                            <img src="img/Air-Jordan.jpg" alt="air-jordans-blue-and-white" itemprop="image">
                         </a>
                         <figcaption>                            
-                            <p>Shoe name</p>
-                            <p class="grey-text">Price</p>
-                            <p>Type of shoe</p>
+                            <p itemprop="name">Shoe name</p>
+                            <p class="grey-text" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                Price: <span itemprop="price" content="200">200</span><span itemprop="priceCurrency" content="USD"> $</span>
+                            </p>
+                            <p itemprop="category">Type of shoe</p>
                         </figcaption>
                     </figure>
-                    <figure>
-                        <a href="sko-side.html">
-                            <img src="img/Air-Jordan.jpg" alt="air-jordans-blue-and-white">
+                    <figure itemscope itemtype="https://schema.org/Product">
+                        <a href="sko-side.html" itemprop="url">
+                            <img src="img/Air-Jordan.jpg" alt="air-jordans-blue-and-white" itemprop="image">
                         </a>
                         <figcaption>                            
-                            <p>Shoe name</p>
-                            <p class="grey-text">Price</p>
-                            <p>Type of shoe</p>
+                            <p itemprop="name">Shoe name</p>
+                            <p class="grey-text" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                Price: <span itemprop="price" content="200">200</span><span itemprop="priceCurrency" content="USD"> $</span>
+                            </p>
+                            <p itemprop="category">Type of shoe</p>
                         </figcaption>
                     </figure>
-                    <figure>
-                        <a href="sko-side.html">
-                            <img src="img/Air-Jordan.jpg" alt="air-jordans-blue-and-white">
+                    <figure itemscope itemtype="https://schema.org/Product">
+                        <a href="sko-side.html" itemprop="url">
+                            <img src="img/Air-Jordan.jpg" alt="air-jordans-blue-and-white" itemprop="image">
                         </a>
                         <figcaption>                            
-                            <p>Shoe name</p>
-                            <p class="grey-text">Price</p>
-                            <p>Type of shoe</p>
+                            <p itemprop="name">Shoe name</p>
+                            <p class="grey-text" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                Price: <span itemprop="price" content="200">200</span><span itemprop="priceCurrency" content="USD"> $</span>
+                            </p>
+                            <p itemprop="category">Type of shoe</p>
                         </figcaption>
                     </figure>
                 </article>
-                <article class="sko-gruppe-produktside">
-                    <figure>
-                        <a href="sko-side.html">
-                            <img src="img/Air-Jordan.jpg" alt="air-jordans-blue-and-white">
+                <article class="sko-gruppe-produktside" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <figure itemscope itemtype="https://schema.org/Product">
+                        <a href="sko-side.html" itemprop="url">
+                            <img src="img/Air-Jordan.jpg" alt="air-jordans-blue-and-white" itemprop="image">
                         </a>
                         <figcaption>                            
-                            <p>Shoe name</p>
-                            <p class="grey-text">Price</p>
-                            <p>Type of shoe</p>
+                            <p itemprop="name">Shoe name</p>
+                            <p class="grey-text" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                Price: <span itemprop="price" content="200">200</span><span itemprop="priceCurrency" content="USD"> $</span>
+                            </p>
+                            <p itemprop="category">Type of shoe</p>
                         </figcaption>
                     </figure>
-                    <figure>
-                        <a href="sko-side.html">
-                            <img src="img/Air-Jordan.jpg" alt="air-jordans-blue-and-white">
+                    <figure itemscope itemtype="https://schema.org/Product">
+                        <a href="sko-side.html" itemprop="url">
+                            <img src="img/Air-Jordan.jpg" alt="air-jordans-blue-and-white" itemprop="image">
                         </a>
                         <figcaption>                            
-                            <p>Shoe name</p>
-                            <p class="grey-text">Price</p>
-                            <p>Type of shoe</p>
+                            <p itemprop="name">Shoe name</p>
+                            <p class="grey-text" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                Price: <span itemprop="price" content="200">200</span><span itemprop="priceCurrency" content="USD"> $</span>
+                            </p>
+                            <p itemprop="category">Type of shoe</p>
                         </figcaption>
                     </figure>
-                    <figure>
-                        <a href="sko-side.html">
-                            <img src="img/Air-Jordan.jpg" alt="air-jordans-blue-and-white">
+                    <figure itemscope itemtype="https://schema.org/Product">
+                        <a href="sko-side.html" itemprop="url">
+                            <img src="img/Air-Jordan.jpg" alt="air-jordans-blue-and-white" itemprop="image">
                         </a>
                         <figcaption>                            
-                            <p>Shoe name</p>
-                            <p class="grey-text">Price</p>
-                            <p>Type of shoe</p>
+                            <p itemprop="name">Shoe name</p>
+                            <p class="grey-text" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                Price: <span itemprop="price" content="200">200</span><span itemprop="priceCurrency" content="USD"> $</span>
+                            </p>
+                            <p itemprop="category">Type of shoe</p>
                         </figcaption>
                     </figure>
                 </article>
             </section>
         </main>
-        <footer class="footer-area">
+        <footer class="footer-area" itemscope itemtype="https://schema.org/WPFooter">
             <div id="grid-container-forside">
-                <section id="section1">
+                <section id="section1" itemprop="about" itemscope itemtype="https://schema.org/WebPage">
                     <ul>
-                        <li><span class="label-footer">Shortcuts:</span></li>
-                        <li> <a href="#Find-store-site">Find store</a></li>
-                        <li> <a href="#Become-a-member-site">Become a member</a></li>
-                        <li> <a href="#feedback-site">Feedback</a></li>
-                        <li> <a href="#my-page-site">My page</a></li>
+                        <li itemprop="headline"> <span class="label-footer">Shortcuts:</span></li>
+                        <li itemprop="significantLink"> <a href="#Find-store-site">Find store</a></li>
+                        <li itemprop="significantLink"> <a href="#Become-a-member-site">Become a member</a></li>
+                        <li itemprop="significantLink"> <a href="#feedback-site">Feedback</a></li>
+                        <li itemprop="significantLink"> <a href="#my-page-site">My page</a></li>
                     </ul>
                 </section>
-                <section id="section2">
+                <section id="section2" itemscope itemtype="https://schema.org/WebPage">
                     <ul>
-                        <li><span class="label-footer">Get help:</span></li>
-                        <li> <a href="#your-order-site">Your order</a></li>
-                        <li> <a href="#shipping-and-delivery-site">Shipping and delivery</a></li>
-                        <li> <a href="#returns-site">Returns</a></li>
-                        <li> <a href="#contact-us-site">Contact us</a></li>
+                        <li itemprop="headline"><span class="label-footer">Get help:</span></li>
+                        <li itemprop="significantLink"> <a href="#your-order-site">Your order</a></li>
+                        <li itemprop="significantLink"> <a href="#shipping-and-delivery-site">Shipping and delivery</a></li>
+                        <li itemprop="significantLink"> <a href="#returns-site">Returns</a></li>
+                        <li itemprop="significantLink"> <a href="#contact-us-site">Contact us</a></li>
                     </ul>
                 </section>
-                <section id="section3">
+                <section id="section3" itemscope itemtype="https://schema.org/WebPage">
                     <ul>
-                        <li><span class="label-footer">Products:</span></li>
-                        <li> <a href="#womens-shoes-site">Women's shoes</a></li>
-                        <li> <a href="#mens-shoes-site">Men's shoes</a></li>
-                        <li> <a href="#kids-shoes-site">Kid's shoes</a></li>
-                        <li> <a href="#accessories-site">Accessories</a></li>
-                        <li> <a href="#shoe-maintenance-products">Shoe maintenance products</a></li>
+                        <li itemprop="headline"><span class="label-footer">Products:</span></li>
+                        <li itemprop="significantLink"> <a href="#womens-shoes-site">Women's shoes</a></li>
+                        <li itemprop="significantLink"> <a href="#mens-shoes-site">Men's shoes</a></li>
+                        <li itemprop="significantLink"> <a href="#kids-shoes-site">Kid's shoes</a></li>
+                        <li itemprop="significantLink"> <a href="#accessories-site">Accessories</a></li>
+                        <li itemprop="significantLink"> <a href="#shoe-maintenance-products">Shoe maintenance products</a></li>
                     </ul>
                 </section>
-                <article id="social-media-icon">
+                <article id="social-media-icon" itemscope itemtype="https://schema.org/WebPage">
                     Our social media:
                     <section>
                         <figure>
-                            <img src="img/Twitter-Logo.png" alt="Twitter-Logo">
+                            <img src="img/Twitter-Logo.png" alt="Twitter-Logo" itemprop="image">
                         </figure>
                         <figure>
-                            <img src="img/Instagram-Logo.png" alt="Instagram-Logo">
+                            <img src="img/Instagram-Logo.png" alt="Instagram-Logo" itemprop="image">
                         </figure>
                     </section>
                     <section>
                         <figure>
-                            <img src="img/Facebook-Logo.png" alt="Facebook-Logo">
+                            <img src="img/Facebook-Logo.png" alt="Facebook-Logo" itemprop="image">
                         </figure>
                         <figure>
-                            <img src="img/YouTube-Logo.png" alt="YouTube-Logo">
+                            <img src="img/YouTube-Logo.png" alt="YouTube-Logo" itemprop="image">
                         </figure>
                     </section>
                 </article>    

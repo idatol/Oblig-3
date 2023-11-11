@@ -3,45 +3,74 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
+        <meta name="author" content="Ida Tollaksen">
+        <meta name="description" content="ShoeDrope - Nike air force 1s, perfect christmas gift!">
+        <!--Legger til fav icon, bruker bare nike logoen fra https://logos-world.net/nike-logo/-->
+        <link rel="icon" type="image/x-icon" href="img/Nike-Logo.png">
+        <!--facbook meta data-->
+        <meta property="og:title" content="ShoeDrope - Nike air force 1s">
+        <meta property="og:url" content="https://schema.org/AggregateRating">
+        <meta property="og:description" content="ShoeDrope nike air force 1s">
+        <meta property="og:image" content="https://cdn.pixabay.com/photo/2016/11/19/18/06/feet-1840619_1280.jpg"> <!--bruker samme bildet som er på "Autumn sale" posteren-->
+
+        <!--kobling til Css dokument og legger til iconer fra font awsome-->
+        <link href="css/style.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="tex/css">
         <link href="css/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
         <link href="css/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
         <link href="css/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
-        <title>Skoside</title>
-        <link href="css/style.css" rel="stylesheet"> 
+        
+        <title>ShoeDrope - Nike air force 1s</title>
+        
     </head>
     <body>
         <header>
             <nav>
-                <ul class="nav-bar">
-                    <li> <a href="#help-site">Help</a></li>
-                    <li> <a href="#Orders-and-returns">Orders & returns</a></li>
-                    <li> <a href="#Free-shipping">Free shipping over $50</a></li>
-                    <li> <a href="#Your-cart">Cart</a></li>
-                    <li> <a href="#Login">Login</a></li>
+                <ul class="nav-bar" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"> 
+                        <a href="#help-site" itemprop="item">Help</a>
+                        <meta itemprop="position" content="1">
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"> 
+                        <a href="#Orders-and-returns" itemprop="item">Orders & returns</a>
+                        <meta itemprop="position" content="2">
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="analyse.html" itemprop="item">Analyse page</a>
+                        <meta itemprop="position" content="3">
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="#Your-cart" itemprop="item">Cart</a>
+                        <meta itemprop="position" content="4">
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"> 
+                        <a href="#Login" itemprop="item">Login</a>
+                        <meta itemprop="position" content="5">
+                    </li>
                 </ul>
             </nav>
-            <nav>
-                <a href="index.html" id="logo-topp">ShoeDrope</a>
-                <ul id="sko-side-name-type-price">
-                    <li>Shoe name</li>
-                    <li> <a class="grey-text">Shoe type</a></li>
-                    <li>Price</li>
+            <nav itemscope itemtype="https://schema.org/Organization">
+                <a href="index.html" id="logo-topp" itemprop="logo">ShoeDrope</a>
+                <ul id="sko-side-name-type-price" itemscope itemtype="https://schema.org/ItemList"> 
+                    <li itemprop="name">Shoe name</li>
+                    <li itemprop="name" class="grey-text"> Shoe type </li>
+                    <li itemprop="name">Price</li>
                 </ul>
-            </nav>
+            </nav>            
         </header>
         <main id="main-skoside">
-            <article>
+            <article itemscope itemtype="https://schema.org/Product">
                 <div id="bilde-selector">
                     <button onclick="changeImage(-1)"><i class="fa-solid fa-arrow-left"></i></button>
-                    <img id="galleryImage" src="img/Sko/nike-produkt-skoside1.webp" alt="nike-air-force1-white-blue-sneakers" class="responsive">
+                    <img id="galleryImage" src="img/Sko/nike-produkt-skoside1.webp" alt="nike-air-force1-white-blue-sneakers" class="responsive" itemprop="image">
                     <button onclick="changeImage(1)"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </article>
-            <section id="valgmuligheter-skoside">
+            <section id="valgmuligheter-skoside" itemscope itemtype="https://schema.org/Product">
                 <nav id="size-and-color">
                     <article id="size-selector">
                         <h2>Select size:</h2>
-                        <select id="size-select">
+                        <select id="size-select" itemprop="size">
                             <option value="36">36</option>
                             <option value="36.5">36.5</option>
                             <option value="37">37</option>
@@ -63,7 +92,7 @@
                     </article>
                     <article id="color-selector">
                         <h2>Select color:</h2>
-                        <select id="color">
+                        <select id="color" itemprop="color">
                             <option value="ligth-blue">Light blue</option>
                             <option value="ligth-blue">Ligth-blue</option>
                             <option value="dark-blue">Dark blue</option>
@@ -74,8 +103,10 @@
                 </nav>
                 <article>
                     <section id="btn-skoside">
-                        <article id="button-add-to-cart">
+                        <article id="button-add-to-cart" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                             <button>Add to cart <i class="fa-solid fa-cart-shopping"></i></button>
+                            <meta itemprop="priceCurrency" content="USD" />
+                            <meta itemprop="price" content="your-price-value" />
                         </article>
                         <article id="button-favorite">
                             <button>Favorite <i class="fa-regular fa-heart"></i></button>
@@ -93,52 +124,52 @@
                 </ul>
             </section>
         </main>        
-        <footer class="footer-area">
+        <footer class="footer-area" itemscope itemtype="https://schema.org/WPFooter">
             <div id="grid-container-forside">
-                <section id="section1">
+                <section id="section1" itemprop="about" itemscope itemtype="https://schema.org/WebPage">
                     <ul>
-                        <li><span class="label-footer">Shortcuts:</span></li>
-                        <li> <a href="#Find-store-site">Find store</a></li>
-                        <li> <a href="#Become-a-member-site">Become a member</a></li>
-                        <li> <a href="#feedback-site">Feedback</a></li>
-                        <li> <a href="#my-page-site">My page</a></li>
+                        <li itemprop="headline"> <span class="label-footer">Shortcuts:</span></li>
+                        <li itemprop="significantLink"> <a href="#Find-store-site">Find store</a></li>
+                        <li itemprop="significantLink"> <a href="#Become-a-member-site">Become a member</a></li>
+                        <li itemprop="significantLink"> <a href="#feedback-site">Feedback</a></li>
+                        <li itemprop="significantLink"> <a href="#my-page-site">My page</a></li>
                     </ul>
                 </section>
-                <section id="section2">
+                <section id="section2" itemscope itemtype="https://schema.org/WebPage">
                     <ul>
-                        <li><span class="label-footer">Get help:</span></li>
-                        <li> <a href="#your-order-site">Your order</a></li>
-                        <li> <a href="#shipping-and-delivery-site">Shipping and delivery</a></li>
-                        <li> <a href="#returns-site">Returns</a></li>
-                        <li> <a href="#contact-us-site">Contact us</a></li>
+                        <li itemprop="headline"><span class="label-footer">Get help:</span></li>
+                        <li itemprop="significantLink"> <a href="#your-order-site">Your order</a></li>
+                        <li itemprop="significantLink"> <a href="#shipping-and-delivery-site">Shipping and delivery</a></li>
+                        <li itemprop="significantLink"> <a href="#returns-site">Returns</a></li>
+                        <li itemprop="significantLink"> <a href="#contact-us-site">Contact us</a></li>
                     </ul>
                 </section>
-                <section id="section3">
+                <section id="section3" itemscope itemtype="https://schema.org/WebPage">
                     <ul>
-                        <li><span class="label-footer">Products:</span></li>
-                        <li> <a href="#womens-shoes-site">Women's shoes</a></li>
-                        <li> <a href="#mens-shoes-site">Men's shoes</a></li>
-                        <li> <a href="#kids-shoes-site">Kid's shoes</a></li>
-                        <li> <a href="#accessories-site">Accessories</a></li>
-                        <li> <a href="#shoe-maintenance-products">Shoe maintenance products</a></li>
+                        <li itemprop="headline"><span class="label-footer">Products:</span></li>
+                        <li itemprop="significantLink"> <a href="#womens-shoes-site">Women's shoes</a></li>
+                        <li itemprop="significantLink"> <a href="#mens-shoes-site">Men's shoes</a></li>
+                        <li itemprop="significantLink"> <a href="#kids-shoes-site">Kid's shoes</a></li>
+                        <li itemprop="significantLink"> <a href="#accessories-site">Accessories</a></li>
+                        <li itemprop="significantLink"> <a href="#shoe-maintenance-products">Shoe maintenance products</a></li>
                     </ul>
                 </section>
-                <article id="social-media-icon">
+                <article id="social-media-icon" itemscope itemtype="https://schema.org/WebPage">
                     Our social media:
                     <section>
                         <figure>
-                            <img src="img/Twitter-Logo.png" alt="Twitter-Logo">
+                            <img src="img/Twitter-Logo.png" alt="Twitter-Logo" itemprop="image">
                         </figure>
                         <figure>
-                            <img src="img/Instagram-Logo.png" alt="Instagram-Logo">
+                            <img src="img/Instagram-Logo.png" alt="Instagram-Logo" itemprop="image">
                         </figure>
                     </section>
                     <section>
                         <figure>
-                            <img src="img/Facebook-Logo.png" alt="Facebook-Logo">
+                            <img src="img/Facebook-Logo.png" alt="Facebook-Logo" itemprop="image">
                         </figure>
                         <figure>
-                            <img src="img/YouTube-Logo.png" alt="YouTube-Logo">
+                            <img src="img/YouTube-Logo.png" alt="YouTube-Logo" itemprop="image">
                         </figure>
                     </section>
                 </article>    
