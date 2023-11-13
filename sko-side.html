@@ -12,7 +12,13 @@
         <meta property="og:url" content="https://schema.org/AggregateRating">
         <meta property="og:description" content="ShoeDrope nike air force 1s">
         <meta property="og:image" content="https://cdn.pixabay.com/photo/2016/11/19/18/06/feet-1840619_1280.jpg"> <!--bruker samme bildet som er på "Autumn sale" posteren-->
-
+        <!--Instagram meta data-->
+        <meta property="og:title" content="ShoeDrope - Nike air force 1s">
+        <meta property="og:description" content="ShoeDrope - Nike air force 1s, perfect christmas gift!">
+        <meta property="og:image" content="https://cdn.pixabay.com/photo/2016/11/19/18/06/feet-1840619_1280.jpg"> <!--bruker samme bildet som er på "Autumn sale" posteren-->
+        <meta property="og:image:alt" content="ShoeDrope Instagram Image">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://itstud.hiof.no/~idakto/sko-side.html">
         <!--kobling til Css dokument og legger til iconer fra font awsome-->
         <link href="css/style.css" rel="stylesheet"> 
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="tex/css">
@@ -24,6 +30,7 @@
         
     </head>
     <body>
+        <a href="#main-skoside" class="skip-to-content">Skip to main content</a> 
         <header>
             <nav>
                 <ul class="nav-bar" itemscope itemtype="https://schema.org/BreadcrumbList">
@@ -50,7 +57,7 @@
                 </ul>
             </nav>
             <nav itemscope itemtype="https://schema.org/Organization">
-                <a href="index.html" id="logo-topp" itemprop="logo">ShoeDrope</a>
+                <h1><a href="index.html" id="logo-topp" itemprop="logo">ShoeDrope</a></h1>
                 <ul id="sko-side-name-type-price" itemscope itemtype="https://schema.org/ItemList"> 
                     <li itemprop="name">Shoe name</li>
                     <li itemprop="name" class="grey-text"> Shoe type </li>
@@ -61,15 +68,16 @@
         <main id="main-skoside">
             <article itemscope itemtype="https://schema.org/Product">
                 <div id="bilde-selector">
-                    <button onclick="changeImage(-1)"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button onclick="changeImage(-1)" aria-label="Previous Image"><i class="fa-solid fa-arrow-left"></i></button>
                     <img id="galleryImage" src="img/Sko/nike-produkt-skoside1.webp" alt="nike-air-force1-white-blue-sneakers" class="responsive" itemprop="image">
-                    <button onclick="changeImage(1)"><i class="fa-solid fa-arrow-right"></i></button>
+                    <button onclick="changeImage(1)" aria-label="Next Image"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </article>
             <section id="valgmuligheter-skoside" itemscope itemtype="https://schema.org/Product">
                 <nav id="size-and-color">
                     <article id="size-selector">
                         <h2>Select size:</h2>
+                        <label for="size-select">Choose a size:</label>
                         <select id="size-select" itemprop="size">
                             <option value="36">36</option>
                             <option value="36.5">36.5</option>
@@ -92,6 +100,7 @@
                     </article>
                     <article id="color-selector">
                         <h2>Select color:</h2>
+                        <label for="color">Choose a color</label>
                         <select id="color" itemprop="color">
                             <option value="ligth-blue">Light blue</option>
                             <option value="ligth-blue">Ligth-blue</option>
@@ -119,8 +128,8 @@
                 <h2>Information about the shoe</h2>
                 <p>Officia ut venison pork chop turkey landjaeger, laboris eu. Consectetur pastrami minim, labore chicken culpa short ribs ball tip tri-tip shoulder bresaola kielbasa anim tempor. Anim jerky doner, bresaola et turkey ut short loin exercitation.</p>
                 <ul id="grid-pic-skoside">
-                    <li><img src="img/Sko/nike-skoside6.webp.png" alt="close-up-of-shoe"></li>
-                    <li><img src="img/Sko/nike-skoside5.webp.png" alt="close-up-of-shoe"></li>
+                    <li><img src="img/Sko/nike-skoside6.webp.png" alt="close-up-of-the-shoe-heal"></li>
+                    <li><img src="img/Sko/nike-skoside5.webp.png" alt="close-up-of-the-shoe-toe"></li>
                 </ul>
             </section>
         </main>        

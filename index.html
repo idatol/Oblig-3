@@ -12,6 +12,14 @@
         <meta property="og:url" content="https://schema.org/AggregateRating">
         <meta property="og:description" content="ShoeDrope online store for all new and popular shoes">
         <meta property="og:image" content="https://cdn.pixabay.com/photo/2016/11/19/18/06/feet-1840619_1280.jpg"> <!--bruker samme bildet som er på "Autumn sale" posteren-->
+        <!--Instagram meta data-->
+        <meta property="og:title" content="ShoeDrope online store">
+        <meta property="og:description" content="ShoeDrope online store for all new and popular shoes">
+        <meta property="og:image" content="https://cdn.pixabay.com/photo/2016/11/19/18/06/feet-1840619_1280.jpg"> <!--bruker samme bildet som er på "Autumn sale" posteren-->
+        <meta property="og:image:alt" content="ShoeDrope Instagram Image">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://itstud.hiof.no/~idakto/produkt.html">
+
         <!--kobling til Css dokument og legger til iconer fra font awsome-->
         <link href="css/style.css" rel="stylesheet"> 
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="tex/css">
@@ -23,9 +31,10 @@
         
     </head>
     <body>
+        <a href="#brands-section" class="skip-to-content">Skip to main content</a>    
         <header>
             <nav>
-                <ul class="nav-bar" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <ul class="nav-bar" itemscope itemtype="https://schema.org/BreadcrumbList" role="menubar">
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"> 
                         <a href="#help-site" itemprop="item">Help</a>
                         <meta itemprop="position" content="1">
@@ -49,9 +58,9 @@
                 </ul>
             </nav>
             <span class="search-bar-and-a" itemscope itemtype="https://schema.org/logo">
-                <a href="index.html" itemprop="logo" >ShoeDrope</a>
-                <label for="Search">Search: </label>
-                <input id="Search" type="text" placeholder="Search ...">
+                <a href="index.html" itemprop="logo" aria-label="Home page">ShoeDrope</a>
+                <label for="Search"></label>
+                <input id="Search" type="text" placeholder="Search ..." role="search">
             </span>
         </header>
         <hr style="border-top: 1px solid #000;">

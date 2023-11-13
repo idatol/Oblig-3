@@ -42,8 +42,13 @@
             <nav>
                 <ul>
                     <li><a href="#analyse-google-trend">Analyse fra google trends norge</a></li>
-                    <li>Analyse SEO og UU</li>
-                    <li>Chat gpt analyse av SEO og UU</li>
+                    <li><a href="#analyse-SEO-UU">Analyse SEO og UU</a></li>
+                    <li><a href="#chat-gpt">Chat gpt analyse av SEO og UU</a></li>
+                    <li><a href="#table/results">Sammenligning av resultat</a></li>
+                    <li><a href="#tiltak-seo-uu">Tiltak til forbedring av SEO og UU</a></li>
+                    <li><a href="#tilgjengelighet-analyse">Tilgjengelighet</a></li>
+                    <li><a href="#microdata-richresults">Microdata og Rich Results</a></li>
+                    <li><a href="#meta-SOME">Meta og SOME</a></li>
                 </ul>
             </nav>
             <section id="analyse-google-trends">
@@ -445,15 +450,109 @@
                     <p>Den første endringen jeg gjorde var å legge til lable på søkefeltat. 
                         Deretter endret jeg grådfargen jeg har brukt til en litt mørkere for at kontrasten skulle bli bedre.
                         Jeg endret deretter på "autumn sale" til å være et h element istedenfor et p element. Dette var den eneste alerten jeg fikset på siden de andre alertene 
-                        gjaldt at noen linkene ikke eksisterte og andre linkene ledet til samme nettside. 
+                        gjaldt at noen linkene ikke eksisterte og andre linkene ledet til samme nettside.
+                        <br>Dette er tilbakemeldingene etter disse forbedringene:
                     </p>
+                    <figure>
+                        <img src="img/forbedringer/etter-forbedringer/forside-wave.png" alt="screanshot av WAVE-web analyse av forsiden etter forbedringer">
+                    </figure>
                     <br>
                     <h3>Universell utforming forbedringer - Produktside</h3>
                     <p> Den første endringen jeg gjorde var å legge til lable på søkefeltat, slik som jeg også gjorde på forsiden
                         De neste errorene antokk jeg at hadde fikset seg selv siden jeg har brukt en klasse for all den gråe texten jeg har brukt. 
                         Etter å ha sjekket igjen på WAVE web fikk jeg ikke kontrast errors mer.
+                        Resten av alertene på denne siden gjaldt også at noen linkene ikke eksisterte og andre linkene ledet til samme nettside.
+                        I tilelg var det en "alternative text alert" noe jeg nå har funnet ut er fordi jeg har skrevert det samme i alt attributtene i alle bildene. 
+                        Siden dette ikke er en ekte nettbutik er dette noe jeg ikke velgte å endre på.
+                        <br>Dette er tilbakemeldingene etter disse forbedringene:  
                     </p>
+                    <figure>
+                        <img src="img/forbedringer/etter-forbedringer/produktside-wave.png" alt="screanshot av WAVE-web analyse av produktsiden etter forbedringer">
+                        <figcaption>Som man kan se i bildet over er det fortsatt en contrast error. Dette er i brødsmulestien og siden det er standar at den siden man er på er litt gråere valgte jeg å ikke endre fargen på det elementet</figcaption>
+                    </figure>
+                    <br>
+                    <h3>Universell utforming forbedringer - Skoside</h3>
+                    <p>
+                        De to errorene jeg fikk på skosiden gjeldt knappene til bildegaleriet. Dette løste jeg ved å legge til et aria-label på begge knappene. 
+                        Deretter fikset puttet jeg lables på drop down menyene for å velge størrelse og farge. 
+                        På denne siden fikk jeg også alerts som gjaldt at noen linkene ikke eksisterte, andre linkene ledet til samme nettside og at noen bilder hadde den samme alt beskrivelsen.
+                        På Skosiden er bildene forskjellige og derfor valgte jeg å skrive en mer unik beskrivelse av bildene istedenfor å ha lik text. 
+                        Jeg fikk også en alert på denne siden at jeg mangler en h1. Jeg gjorde dermed hjem knappen (ShoeDrope)til et h1 element.
+                        <br>Dette er tilbakemeldingene etter disse forbedringene: 
+                    </p>
+                    <figure>
+                        <img src="img/forbedringer/etter-forbedringer/skoside-wave.png" alt="screanshot av WAVE-web analyse av skosiden etter forbedringer">
+                    </figure>
                 </article>
+            </section>
+            <section id="tilgjengelighet-analyse">
+                <h2>Tilgjengelighet</h2>
+                <h3>Skjermleserkompatibilite</h3>
+                <P>For å analysere Skjermleserkompatibiliten brukte jeg programet NVDA. Dette programet leste opp om hvert elemetn ver en link, bilde, text osv. 
+                    Når følte jeg det var ganske bra informasjon som ble gidt, hvis det var et bilde bled alt-attributtet til det bilde lest opp og når det var en link ble det nevnt.
+                    Det var derimot noe jeg tror kunne vert bedre, som at noen knapper kunne vert mer beskrivende. 
+                    Dette merket jeg for eksempel på "ShoeDrope" hvor det bare blir sagdt "ShoeDrope", men det hadde kansje vert bedre om den i tilleg også hadde sagdt "hjem knapp"
+                    Jeg la derfor til et aria-label og kontrolerte at det nå bled lest opp.</P>
+                <figure>
+                    <img src="img/forbedringer/tilgjengelighet/opplesing-1.png" alt="skjermbilde av html kode, lagdt til aria-lable">
+                </figure>
+                <br>
+                <h3>Tastaturnavigasjon</h3>
+                <p>Tastaturnavigasjonen på alle nettsidene vil jeg si er veldig god. Når jeg testet kom jeg meg enkelt frem og tilbake på de ulike sidene. 
+                    Siden det er mange små knapper i blandt annet fotteren min tokk dette litt lenger tid, men det gikk veldig fint. 
+                    Under er et skjermbilde som hviser hvordan jeg la til "skip til hovedinnhold" snarveigen</p>
+                <figure>
+                    <img src="img/forbedringer/tilgjengelighet/tastatur-1.png" alt="skjermbilde av html kode 'skip til hovedinnhold' snarvei">
+                    <figcaption>Denne snargeigen ble lagdt til rett innefor boddy. Fikk ikke tid til å gjøre spesielt mye med designet/css.</figcaption>
+                </figure>
+                <br>
+                <h3>ARIA-attributter</h3>
+                <p>Jeg hadde alerede lagdt til noen ARIA-attributet på grunn av noen errors fra blandt annet UU analysen. 
+                    Under er skjermbilder av noen av aria atributene jeg la til </p>
+                <article>
+                    <img src="img/forbedringer/tilgjengelighet/aria-nav-meny.png" alt="skjermbilde av aria attributtet role=menuebar, lagdt til">
+                    <img src="img/forbedringer/tilgjengelighet/aria-search.png" alt="skjermbilde av ARIA-attributet role=search, lagdt til">
+                    <img src="img/forbedringer/tilgjengelighet/aria-knapp.png" alt="skjermbilde av ARIA-attributet aria-lable=next picture">
+                </article>
+            </section>
+            <section id="microdata-richresults">
+                <h2>Microdata og Rich Results</h2>
+                <h3>Microdata</h3>
+                <p>Under er en kolekson skjermbilder som viser hvor jeg har lagdt til microdata for å optimalisere søkertreff</p>
+                <article>
+                    <img src="img/forbedringer/meta/meta-data-breadcrumpath-logo-produkt.png" alt="skjermbilde av at meta data er lagdt til i brødsmulestien">
+                    <br>
+                    <img src="img/forbedringer/meta/meta-data-footer-section1.png" alt="skjermbilde av at meta data er lagdt til i footer">
+                    <br>
+                    <img src="img/forbedringer/meta/meta-data-footer-social-icons.png" alt="skjermbilde av at meta data er lagdt til i fotter icon">
+                    <br>
+                    <img src="img/forbedringer/meta/meta-data-individuel-sko.png" alt="skjermbilde av at meta data er lagdt til for individuelle sko">
+                    <br>
+                    <img src="img/forbedringer/meta/meta-data-nav-liste-forsiden.png" alt="skjermbilde av at meta data er lagdt til i nav">
+                    <br>
+                </article>
+                <p>Microdata som er lagdt til på skosiden:</p>
+                <article>
+                    <br>
+                    <img src="img/forbedringer/meta/sko-price.png" alt="Lagdt til price og curency">
+                    <br>
+                    <img src="img/forbedringer/meta/sko-color.png" alt="Lagdt til color">
+                    <br>
+                    <img src="img/forbedringer/meta/sko-size.png" alt="Lagdt til size">
+                </article>
+                <h3>Rich Results</h3>
+                <p>Under ser man de endringene jeg gjorde for å få bedre rich results. Siden jeg har mesteparten av sisen min på engels har jeg oversatt det til engelsk</p>
+                <figure>
+                    <img src="img/forbedringer/meta/meta-rich-results.png" alt="meta-rich-results skjermbilde">
+                </figure>
+            </section>
+            <section id="meta-SOME">
+                <h2>Meta og SOME</h2>
+                <h3>Meta</h3>
+                <p>Under kan man se skjermbilde meta dataen som er lagdt til for facebook og instagram:</p>
+                <figure>
+                    <img src="img/forbedringer/meta-data-head.png" alt="Skjermbilde av meta data som er lagdt til">
+                </figure>
             </section>
         </main>
         <footer class="footer-area" itemscope itemtype="https://schema.org/WPFooter">
