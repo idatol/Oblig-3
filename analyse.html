@@ -12,6 +12,30 @@
     </head>
     <body>
         <header>
+            <nav>
+                <ul class="nav-bar" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"> 
+                        <a href="index.html" itemprop="item">Home page</a>
+                        <meta itemprop="position" content="1">
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"> 
+                        <a href="#Orders-and-returns" itemprop="item">Orders & returns</a>
+                        <meta itemprop="position" content="2">
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="analyse.html" itemprop="item">Analyse page</a>
+                        <meta itemprop="position" content="3">
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="#Your-cart" itemprop="item">Cart</a>
+                        <meta itemprop="position" content="4">
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"> 
+                        <a href="#Login" itemprop="item">Login</a>
+                        <meta itemprop="position" content="5">
+                    </li>
+                </ul>
+            </nav>
             <h1>Oblig 4 - Ida Tollaksen - Analyse side</h1>
         </header>
         <main>
@@ -401,9 +425,86 @@
             <section id="tiltak-seo-uu">
                 <h2>Tiltak til forbedring av SEO og UU</h2>
                 <article>
-                    <h3>Forside - SEO</h3>
-                    <p>Første forbedring er å legge til meta data</p>
+                    <h3>SEO forbedringer</h3>
+                    <p>Første forbedring er å legge til meta data. Som man kan se på bildet under er det gjordt.
+                        Dette gjorde at SEO scoren min ble 100 på alle sidene.
+                    </p>
+                    <figure>
+                        <img src="img/forbedringer/meta-data-head-forsiden.png" alt="Bilde som viser meta data på forsiden">
+                    </figure>
+                    <p>I tilleg fikset jeg knappestørelsen til footeren min på mobilversjon 
+                        <br>Jeg fikset også a elementet i brødsmulestien min ved å legge "/" inni en div
+                            Dette var noe jeg prøvde å ungå, men når jeg brukte andre semantiske tager la ikke "/"
+                            seg på samme linje som de andre to li elementen
+                        <br>Jeg løste det lignende problemet på skosiden ved å ta bort a elementet på alle liste elementene.
+                            Dette ga i tilleg mer mening siden det ikke er linker, kun informasjon. 
+                    </p>
+                </article>
+                <article>
+                    <h3>Universell utforming forbedringer - Forside</h3>
+                    <p>Den første endringen jeg gjorde var å legge til lable på søkefeltat. 
+                        Deretter endret jeg grådfargen jeg har brukt til en litt mørkere for at kontrasten skulle bli bedre.
+                        Jeg endret deretter på "autumn sale" til å være et h element istedenfor et p element. Dette var den eneste alerten jeg fikset på siden de andre alertene 
+                        gjaldt at noen linkene ikke eksisterte og andre linkene ledet til samme nettside. 
+                    </p>
+                    <br>
+                    <h3>Universell utforming forbedringer - Produktside</h3>
+                    <p> Den første endringen jeg gjorde var å legge til lable på søkefeltat, slik som jeg også gjorde på forsiden
+                        De neste errorene antokk jeg at hadde fikset seg selv siden jeg har brukt en klasse for all den gråe texten jeg har brukt. 
+                        Etter å ha sjekket igjen på WAVE web fikk jeg ikke kontrast errors mer.
+                    </p>
                 </article>
             </section>
         </main>
+        <footer class="footer-area" itemscope itemtype="https://schema.org/WPFooter">
+            <div id="grid-container-forside">
+                <section id="shortcuts" itemprop="about" itemscope itemtype="https://schema.org/WebPage">
+                    <ul>
+                        <li itemprop="headline"> <span class="label-footer">Shortcuts:</span></li>
+                        <li itemprop="significantLink"> <a href="#Find-store-site">Find store</a></li>
+                        <li itemprop="significantLink"> <a href="#Become-a-member-site">Become a member</a></li>
+                        <li itemprop="significantLink"> <a href="#feedback-site">Feedback</a></li>
+                        <li itemprop="significantLink"> <a href="#my-page-site">My page</a></li>
+                    </ul>
+                </section>
+                <section id="get-help" itemscope itemtype="https://schema.org/WebPage">
+                    <ul>
+                        <li itemprop="headline"><span class="label-footer">Get help:</span></li>
+                        <li itemprop="significantLink"> <a href="#your-order-site">Your order</a></li>
+                        <li itemprop="significantLink"> <a href="#shipping-and-delivery-site">Shipping and delivery</a></li>
+                        <li itemprop="significantLink"> <a href="#returns-site">Returns</a></li>
+                        <li itemprop="significantLink"> <a href="#contact-us-site">Contact us</a></li>
+                    </ul>
+                </section>
+                <section id="products" itemscope itemtype="https://schema.org/WebPage">
+                    <ul>
+                        <li itemprop="headline"><span class="label-footer">Products:</span></li>
+                        <li itemprop="significantLink"> <a href="#womens-shoes-site">Women's shoes</a></li>
+                        <li itemprop="significantLink"> <a href="#mens-shoes-site">Men's shoes</a></li>
+                        <li itemprop="significantLink"> <a href="#kids-shoes-site">Kid's shoes</a></li>
+                        <li itemprop="significantLink"> <a href="#accessories-site">Accessories</a></li>
+                        <li itemprop="significantLink"> <a href="#shoe-maintenance-products">Shoe maintenance products</a></li>
+                    </ul>
+                </section>
+                <article id="social-media-icon" itemscope itemtype="https://schema.org/WebPage">
+                    Our social media:
+                    <section>
+                        <figure>
+                            <img src="img/Twitter-Logo.png" alt="Twitter-Logo" itemprop="image">
+                        </figure>
+                        <figure>
+                            <img src="img/Instagram-Logo.png" alt="Instagram-Logo" itemprop="image">
+                        </figure>
+                    </section>
+                    <section>
+                        <figure>
+                            <img src="img/Facebook-Logo.png" alt="Facebook-Logo" itemprop="image">
+                        </figure>
+                        <figure>
+                            <img src="img/YouTube-Logo.png" alt="YouTube-Logo" itemprop="image">
+                        </figure>
+                    </section>
+                </article>    
+            </div>
+        </footer>
     </body>
